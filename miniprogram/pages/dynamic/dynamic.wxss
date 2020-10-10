@@ -1,0 +1,12 @@
+/* pages/dynamic/dynamic.wxss */
+  .dynamic-page{
+    width: 100%;
+  }
+  .dynamic-page .page-section-one{
+    margin-top: 50px;
+    text-align: center;
+  }
+  .dynamic-page .page-section-one text{
+    display: block;
+    color: #c5c5c5;
+  }

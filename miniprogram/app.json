@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/menu/menu",
+    "pages/shopcart/shopcart",
+    "pages/personal/personal",
+    "pages/seckill/seckill",
+    "pages/dynamic/dynamic",
+    "pages/details/details",
+    "pages/address/address",
+    "pages/search/search",
+    "pages/calc/calc",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "猫咖",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7b7e82",
+    "selectedColor": "#f5b43e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath": "images/home_icon1.png",
+        "selectedIconPath": "images/home_icon2.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/menu_icon1.png",
+        "selectedIconPath": "images/menu_icon2.png",
+        "pagePath": "pages/menu/menu",
+        "text": "分类"
+      },
+      {
+        "iconPath": "images/shop_icon1.png",
+        "selectedIconPath": "images/shop_icon2.png",
+        "pagePath": "pages/shopcart/shopcart",
+        "text": "购物车"
+      },
+      {
+        "iconPath": "images/personal_icon1.png",
+        "selectedIconPath": "images/personal_icon2.png",
+        "pagePath": "pages/personal/personal",
+        "text": "我的"
+      }
+    ]
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.5",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,109 @@
+/* pages/menu/menu.wxss */
+/* 样式开始 */
+/* 头部 */
+.header{
+  padding: 30rpx;
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.header .search-box{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  background-color: #fafafa;
+  border-radius: 5px;
+  align-items: center;
+}
+.header .search-box .btn{
+  padding: 0 6px;
+}
+.header .search-box input{
+  border-radius: 5px;
+  flex: 1;
+  height: 80rpx;
+  display: inline-block;
+  background-color: #fafafa;
+}
+.header .scan-btn{
+  margin-left: 30rpx;
+}
+/* 主体 */
+.container-box{
+  min-height: 100vh;
+}
+.container{
+  display: flex;
+  min-height: 90vh;
+}
+.container .left{
+  width: 185rpx;
+  background: #eee;
+}
+.container .left .item-box{
+  padding: 10px 10px;
+  text-align: center;
+  color: rgb(148, 148, 148);
+  font-size: 15px;
+}
+.container .left .active{
+  background: #fff;
+  color: rgb(63, 63, 63);
+}
+.container .left image{
+  display: none;
+}
+.container .left image.active{
+  margin: auto;
+  display: block;
+  width: 60rpx;
+  height: 80rpx;
+  margin-bottom: 8px;
+}
+.container .right{
+  flex: 1;
+  background: #fff;
+}
+.container .right .item-box{
+  padding: 5px;
+  display: flex;
+  border: 1px solid #f5f5f5;
+  border-radius:5px; 
+  margin: 10px;
+}
+.container .right .item-box image{
+  width: 250rpx;
+  height: 200rpx;
+  margin: 0 10px 0 5px;
+}
+.container .right .item-box .info-box .title{
+  font-weight: bold;
+  color: orange;
+  padding-bottom: 20rpx;
+  display: block;
+}
+.container .right .item-box .info-box .box .describe{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  width: 220rpx;
+  display: block;
+  font-size: 12px;
+  color: #666;
+  padding-bottom: 10rpx;
+}
+.container .right .item-box .info-box .box .price{
+  color: #f44;
+  font-size: 15px;
+}
+.container .right .item-box .info-box .box view{
+  display: block;
+}
+.container .right .item-box .info-box .box .sold{
+  color: #666;
+  background-color: #eee;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 3px;
+  font-size: 11px;
+}

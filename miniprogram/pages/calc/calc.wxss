@@ -1,0 +1,18 @@
+/* pages/calc/calc.wxss */
+.page-section-one{
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+}
+.page-section-one .time-box{
+  padding-top: 6vh;
+}
+.page-section-one .van-button{
+  width: 100% !important;
+}
+.page-section-three{
+  text-align: center;
+}
+.page-section-three .van-button{
+  width: 90% !important;
+}

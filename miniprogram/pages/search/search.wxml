@@ -1,0 +1,21 @@
+<!--pages/search/search.wxml-->
+<view class="header">
+  <view class="search-box">
+    <van-icon name="search" bindtap="onSearch" class="btn" size="25px"/>
+    <input placeholder="搜索商品名称" value="{{keywords}}" bindinput="inputKw"></input>
+  </view>
+  <van-icon name="scan" class="scan-btn" size="25px"/>
+</view>
+<view class="item-box" wx:for="{{goodsList}}" wx:key="unique">
+  <image src="{{item.img}}"></image>
+  <view class="info-box">
+    <text class="title">{{item.title}}</text>
+    <view class="box">
+      <text class="describe">{{item.describe}}</text>
+      <text class="price">{{item.price}}</text>
+      <view>
+        <text class="sold">已售{{item.sold}}</text>
+      </view>
+    </view>
+  </view>
+</view>

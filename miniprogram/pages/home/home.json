@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon/index"
+  }
+}

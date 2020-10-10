@@ -1,0 +1,65 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="home-page">
+    <view class="page-section-one">
+      <!--轮播图-->
+      <swiper indicator-dots="{{ indicatorDots }}" autoplay="{{ autoplay }}" interval="{{interval}}" duration="{{ duration }}" bindtap="linkTomenu">
+        <block wx:for="{{ oneimgs }}" wx:key="unique">
+          <swiper-item>
+          <image src="{{ item.img }}" class="slide-image"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="page-section-two">
+      <!-- 宫格 -->
+      <view class="grid-list">
+        <view class="grid-item" bindtap="linkTomenu">
+          <image src="../../images/grid_icon1.png"></image>
+          <text>产品中心</text>
+        </view>
+        <view class="grid-item" bindtap="linkToseckill">
+          <image src="../../images/grid_icon2.png"></image>
+          <text>秒杀</text>
+        </view>
+        <view class="grid-item" bindtap="linkTodynamic">
+          <image src="../../images/grid_icon3.png"></image>
+          <text>动态</text>
+        </view>
+        <view class="grid-item" bindtap="linkToaddress">
+          <image src="../../images/grid_icon4.png"></image>
+          <text>门店地址</text>
+        </view>
+      </view>
+    </view>
+    <view class="page-section-three">
+      <view class="title_box">
+        <text class="title">精品推荐</text>
+      </view>
+      <view class="rec_box">
+        <view class="pro-box" wx:for="{{recommend_list}}" wx:key="unique" bindtap="linkTodetails" data-itemid="{{item.itemid}}">
+          <image src="{{item.img}}" lazy-load="true"></image>
+          <text class="pro-title">{{item.title}}</text>
+          <view class="bottom-box">
+            <view class="pro-price-box">
+              <text class="pri-sign">￥</text>
+              <text class="pro-price">{{item.price}}</text>
+            </view>
+            <text class="pro-sold">月售{{item.sold}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="page-section-four">
+      <view class="title_box">
+        <text class="title">休憩一下</text>
+      </view>
+      <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猫咖，一种可以喝咖啡，又可以玩猫的新兴宠物主题咖啡馆......</text>
+      <view class="pic_box">
+        <view class="pic-box" wx:for="{{fourimgs}}" wx:key="unique">
+          <image src="{{item.img}}" style="height:{{item.height}}px"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

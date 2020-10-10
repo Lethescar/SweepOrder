@@ -1,0 +1,25 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <view class="myOrder">我的订单</view>
+  <view class="orderBox" wx:for="{{orderlist}}" wx:key="unique">
+    <view class="title" style="display: flex;justify-content: space-between;">
+      <text>{{item.dlist.title}}</text>
+      <text style="font-size: 13px;color: #666;margin-top: 4px;">订单编号：{{item.orderId}}</text>
+    </view>
+    <view class="infoBox">
+      <image src="{{item.dlist.img}}"></image>
+      <view class="rightPart">
+        <view class="orderTime">
+          下单时间：{{item.ordertime}}
+        </view>
+        <view class="count">
+          数量：{{item.count}}
+        </view>
+        <view class="price">
+          价格：{{item.dlist.price}}
+        </view>
+      </view>
+    </view>
+    
+  </view>
+</view>

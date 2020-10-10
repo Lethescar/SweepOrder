@@ -1,0 +1,117 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wx89b3d46f5c896870",
+	"projectname": "SweepOrder",
+	"libVersion": "2.10.3",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/menu/menu",
+					"pathName": "pages/menu/menu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/shopcart/shopcart",
+					"pathName": "pages/shopcart/shopcart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/seckill/seckill",
+					"pathName": "pages/seckill/seckill",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dynamic/dynamic",
+					"pathName": "pages/dynamic/dynamic",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shop/shop",
+					"pathName": "pages/shop/shop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/address/address",
+					"pathName": "pages/address/address",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

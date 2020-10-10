@@ -1,0 +1,11 @@
+<!--pages/seckill/seckill.wxml-->
+<view class="container">
+  <view class="seckill-page">
+    <view class="page-section-one">
+
+    </view>
+    <view class="page-section-two">
+      
+    </view>
+  </view>
+</view>

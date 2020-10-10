@@ -1,0 +1,9 @@
+<!--pages/dynamic/dynamic.wxml-->
+<view class="container">
+  <view class="dynamic-page">
+    <view class="page-section-one">
+      <image src="../../images/shop_trolley.png" style="width:100%;height:600rpx;"></image>
+      <text>暂无动态</text>
+    </view>
+  </view>
+</view>

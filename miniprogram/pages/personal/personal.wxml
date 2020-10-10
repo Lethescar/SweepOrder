@@ -1,0 +1,23 @@
+<!--pages/personal/personal.wxml-->
+<view class="container">
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+      size="default"
+    ></button>
+    <view style="line-height: 15vh;margin-right: 60%;">{{nickName}}</view>
+  </view>
+  <view class="allorder">
+    <view class="orderTitle">
+      <view class="leftBox">
+        <van-icon name="description" size="20" style="vertical-align: text-bottom;" color="orange"/>
+        <text>我的订单</text>
+      </view>
+      <van-icon name="arrow" style="vertical-align: text-bottom;" bindtap="toMyOrder"/>
+    </view>
+  </view>
+</view>

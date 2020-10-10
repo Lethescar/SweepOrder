@@ -1,0 +1,6 @@
+/* pages/seckill/seckill.wxss */
+  .seckill-page{
+    width: 100%;
+  }
+  
+  

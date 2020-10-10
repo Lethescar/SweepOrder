@@ -1,0 +1,37 @@
+/* pages/order/order.wxss */
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: #f5f5f5;
+}
+.myOrder{
+  height: 100rpx;
+  background-color: orange;
+  padding-left: 20rpx;
+  line-height: 100rpx;
+}
+.orderBox{
+  margin: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.orderBox .title{
+  padding: 20rpx 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+.orderBox image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 6px;
+  margin: 0 20rpx 0 10rpx;
+}
+.orderBox .infoBox{
+  margin-top: 20rpx;
+  display: flex;
+}
+.orderBox .infoBox .rightPart{
+  font-size: 15px;
+  color: #555;
+}

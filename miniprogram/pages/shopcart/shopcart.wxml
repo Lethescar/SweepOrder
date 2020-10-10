@@ -1,0 +1,50 @@
+<!--pages/shop/shop.wxml-->
+<view class="container">
+  <view class="shop-page">
+    <view class="page-section-one {{goodslist.length === 0 ? '' : 'hidden' }}" >
+      <view class="show-empty">
+        <image src="../../images/shop_trolley.png"></image>
+        <text>你忍心让购物车君寂寞空虚吗</text>
+      </view>
+    </view>
+    <view class="page-section-two {{goodslist.length === 0 ? 'hidden' : '' }}">
+      购物车共有{{goodslist.length}}件商品
+    </view>
+    <view class="page-section-three">
+      <view class="item-box" wx:for="{{goodslist}}" wx:key="unique">
+        <van-swipe-cell right-width="{{ 65 }}">
+          <view class="item">
+            <icon type="success" data-id="{{item.goodsid}}" bindtap="changeState" color="{{item.checked ? 'orange' : '#eee'}}"/>
+            <image src="{{item.dlist.img}}"></image>
+            <view class="info-box">
+              <view style="margin-bottom: 15rpx">{{item.dlist.title}}</view>
+              <view class="glsize">{{item.currentSize.sizeInfo}}</view>
+              <view class="bottom-box">
+                <view style="margin-top:18rpx; color:red;">￥{{item.currentSize.price}}</view>
+                <view class="stepper-box">
+                  <view class="btn" data-id="{{item.goodsid}}" bindtap="cut">-</view>
+                  <input disabled="false" value="{{ item.count }}"></input>
+                  <view class="btn" data-id="{{item.goodsid}}" bindtap="add">+</view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view slot="right" data-id="{{item.goodsid}}" bindtap="deletecart">删除</view>
+        </van-swipe-cell>
+      </view>
+    </view>
+    <view class="page-section-four">
+      <view class="footerbar">
+        <view>
+          <icon type="success" style="vertical-align: bottom;" bindtap="checkall" color="{{goodslist.length == checkCount ? 'orange' : '#eee'}}"/>
+          <text>全选</text>
+        </view>
+        <view class="price-box" style="display:flex;margin-left:10rpx;">
+          <text>合计：</text>
+          <view style="color:red;">￥{{total}}</view>
+        </view>
+        <view class="btn" data-total="{{total}}" bindtap="{{total===0 ? 'showToast' : 'gocalc'}}">结算({{checkCount}})</view>
+      </view>
+    </view>
+  </view>
+</view>

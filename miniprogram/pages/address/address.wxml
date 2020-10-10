@@ -1,0 +1,18 @@
+<view class="page-body">
+  <view class="page-section page-section-gap">
+    <map
+      id="myMap"
+      style="width: 100%; height: 90vh;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      show-location
+    ></map>
+  </view>
+  <view style="height: 10vh;line-height: 10vh;display:flex;justify-content: space-between;margin:0 40rpx;">
+    <text>济南市历城区花园路XXXXX</text>
+    <view style=" height: 10vh;display: flex;align-items: center">
+      <image src='../../images/routeicon.png' style="width: 100rpx; height: 100rpx;align-items: center;" bindtap="toMoka"></image>
+    </view>
+  </view>
+</view>

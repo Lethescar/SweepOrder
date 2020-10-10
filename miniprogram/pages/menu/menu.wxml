@@ -1,0 +1,34 @@
+<!--pages/menu/menu.wxml-->
+<view class="container-box">
+  <view class="header">
+    <view class="search-box">
+      <van-icon name="search" class="btn" size="25px"/>
+      <input placeholder="搜索商品名称" value="{{keywords}}" bindtap="onSearch"></input>
+    </view>
+    <van-icon name="scan" class="scan-btn" size="25px" bindtap="scanCode"/>
+  </view>
+  <view class="container">
+    <view class="left">
+      <view wx:for="{{typeList}}" wx:key="unique" class="item-box {{item.tlid === activeId ? 'active' : '' }}" bindtap="selectType" data-id="{{item.tlid}}">
+        <image class="{{item.tlid === activeId ? 'active' : '' }}" src="{{ item.img }}"/>
+        <view>{{item.title}}</view>
+      </view>
+    </view>
+    <view class="right">
+      <view class="item-box" bindtap="goDetail" data-itemid="{{item.itemid}}" wx:for="{{goodsList}}" wx:key="unique">
+        <image src="{{item.img}}"></image>
+        <view class="info-box">
+          <text class="title">{{item.title}}</text>
+          <view class="box">
+            <text class="describe">{{item.describe}}</text>
+            <text class="price">￥{{item.price}}</text>
+            <view>
+              <text class="sold" wx:if="{{item.sold == null}}">月售0</text>
+              <text class="sold" wx:else>月售{{item.sold}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

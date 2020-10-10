@@ -1,0 +1,132 @@
+/* pages/details/details.wxss */
+  .details-page{
+    width: 100%;
+  }
+  image{
+    width: 100%;
+  }
+  /* 第一部分 */
+  .details-page .page-section-one{
+    height: 100%;
+  }
+  /* 第二部分 */
+  .page-section-two{
+    position: relative;
+    background-color: #fff;
+  }
+  .page-section-two .por-info{
+    padding: 10px 20px;
+  }
+  .page-section-two .por-info .pro-price-box{
+    font-size: 13px;
+    color: red;
+    display: block;
+  }
+  .page-section-two .por-info .pro-price-box .pro-price{
+    font-size: 20px;
+    font-style: bold;
+  }
+  .page-section-two .por-info .pro-title{
+    color: black;
+    font-size: 16px;
+    display: block;
+    padding-bottom: 5px;
+  }
+  .page-section-two .por-info .bottom-box{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-section-two .por-info .bottom-box .pro-oriprice,.pro-sold{
+    text-decoration: line-through;
+    color: #a5a5a5;
+    font-size: 13px;
+  }
+  .page-section-two .por-info .bottom-box .pro-sold{
+    text-decoration: unset;
+  }
+  .page-section-two .share-box{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  .page-section-two .share-box .share-btn{
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+  }
+  /* 第四部分 */
+  .details-page .page-section-four .van-goods-action{
+    padding-right: 5px; 
+  }
+  .details-page .page-section-four button:not([size='mini']){
+    width: unset;
+  }
+  .details-page .page-section-four .shadow-layer{
+    position: relative;
+  }
+  .details-page .page-section-four .shadow-layer .btn-box{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+  }
+  .details-page .page-section-four .shadow-layer .pro-info-box{
+    padding: 35rpx;
+    display: flex;
+  }
+  .details-page .page-section-four .shadow-layer .pro-info-box .por-info{
+    display: inline-block;
+    padding-top:4vh; 
+    width: 35vw;
+    height: 8vh;
+  }
+  .page-section-four .shadow-layer .pro-info-box .por-info .pro-price-box{
+    font-size: 13px;
+    color: red;
+    display: block;
+  }
+  .page-section-four .shadow-layer .pro-info-box .por-info .pro-price-box .pro-price{
+    font-size: 20px;
+    font-style: bold;
+  }
+  .details-page .page-section-four .shadow-layer .size-info-box,.num-box{
+    padding: 35rpx;
+  }
+  .details-page .page-section-four .shadow-layer .size-info-box .size-info{
+    margin-top: 10px;
+    display: flex;
+  }
+  .details-page .page-section-four .shadow-layer .size-info-box .size-info .size{
+    display: inline-block;
+    padding: 3px 5px;
+    margin: 5px 8px;
+    border: 1px solid rgb(221, 221, 221);
+  }
+  .details-page .page-section-four .shadow-layer .size-info-box .size-info .active{
+    border: 1px solid red;
+  }
+  .details-page .page-section-four .shadow-layer .num-box .stepper-box{
+    display: flex;
+    height: 60rpx;
+    justify-content: flex-end;
+  }
+  .details-page .page-section-four .shadow-layer .num-box .stepper-box input{
+    background-color: rgba(221, 221, 221, 0.644);
+    width: 60rpx;
+    height: 60rpx;
+    text-align: center;
+  }
+  .details-page .page-section-four .shadow-layer .num-box .stepper-box .btn{
+    border: 1px solid #ccc;
+    width: 60rpx;
+    text-align: center;line-height: 60rpx;
+  }
+  .details-page .page-section-four .shadow-layer .num-box .stepper-box .btn:active{
+    background-color: #cfcfcf81
+  }
+ 
